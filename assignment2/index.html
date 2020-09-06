@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="detailsWrap">
+        <form class="form">
+            <label for="size">Choose a Square Size:</label>
+            <select id="size" name="size">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4" selected>4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </form>
+
+        <div class="countWrap">
+            <span class="text">Steps Count:</span>
+            <span class="count" id="stepCount">0</span>
+        </div>
+
+    </div>
+    <div class="gamePlayMode">
+        <div class="grids">
+            <div class="gridDataWrapper">
+                <div class="header"> Current Grid </div>
+                <div class="gridWrap" id="currentGrid">
+                </div>
+                <div class="note"><strong>Note:</strong> Click on the boxes to see any changes in corresponding row and
+                    column</div>
+            </div>
+            <div class="equate" id="equate"> !== </div>
+            <div class="gridDataWrapper">
+                <div class="header"> Target Grid </div>
+
+                <div class="gridWrap" id="targetGrid">
+                    <!--
+                        EXAMPLE HTML AFTER RENDER
+                        =========================
+                     <div class="row">
+                        <div class="column" data-x='0' data-y="0">1</div>
+                        <div class="column" data-x='0' data-y="1">1</div>
+                        <div class="column" data-x='1' data-y="1">1</div>
+                    </div>
+                    <div class="row">
+                        <div class="column" data-x='1' data-y="0">1</div>
+                        <div class="column" data-x='1' data-y="1">1</div>
+                        <div class="column" data-x='1' data-y="1">1</div>
+                    </div>
+                    <div class="row">
+                        <div class="column" data-x='1' data-y="0">1</div>
+                        <div class="column" data-x='1' data-y="1">1</div>
+                        <div class="column" data-x='1' data-y="1">1</div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="game-over-text" id="quit">
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
